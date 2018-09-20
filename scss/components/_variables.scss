@@ -33,13 +33,13 @@
 
 // 1. Colors
 // ==========================================================================
-
-$primary-color: color("coral", "base") !default;
+@import "components/color-variables";
+$primary-color: color("pink", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("$violet-indigo", "base") !default;
-$success-color: color("lime", "accent-3") !default;
+$secondary-color: color("indigo", "base") !default;
+$success-color: color("green", "accent-3") !default;
 $error-color: color("red", "darken-4") !default;
 $link-color: color("teal", "accent-4") !default;
 

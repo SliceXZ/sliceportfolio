@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Whitney light;
+  src: url("./assets/fonts/WHITNLIG.otf") format("opentype"); }
+
+@font-face {
+  font-family: Whitney light it;
+  src: url("./assets/fonts/WHITNLIT.otf") format("opentype"); }
+
+@font-face {
+  font-family: Whitney med;
+  src: url("/assets/fonts/WhitneyHTF-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Raleway heavy;
+  src: url("/assets/fonts/Raleway-ExtraBold.ttf") format("opentype"); }
+
+body {
+  font-size: 100%; }
+
+h6 {
+  font-family: Whitney med;
+  font-size: 1.25rem; }
+
+h1, h2, h3, h4 {
+  font-family: Raleway heavy; }
+
+h1 a {
+  color: white; }
+  h1 a:hover {
+    text-decoration: underline; }
+
+h3 {
+  font-size: 2.25rem; }
+
+p {
+  font-family: Whitney light;
+  font-size: 1.15rem;
+  color: #212121; }
+
+em {
+  font-family: Whitney light it; }
+
+.overlay {
+  position: absolute;
+  top: 50;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #212121; }
+
+.card-image:hover > .overlay {
+  opacity: 0.85; }
+
+.text {
+  opacity: 1;
+  font-size: 1.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+  .text p {
+    color: white; }
+
+.card-action:hover {
+  background-color: #bdbdbd;
+  transition-property: background-color;
+  transition-duration: 0.5s; }
+
+#landingImg {
+  height: 50vh;
+  overflow: hidden;
+  background-image: url("/assets/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+
+#darkArea {
+  background-color: #221d23; }
+  #darkArea p {
+    color: white; }
+
+#myPic {
+  max-width: 50%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; }
+
+#homeicon i {
+  padding-right: 3rem;
+  color: #ff1744; }
