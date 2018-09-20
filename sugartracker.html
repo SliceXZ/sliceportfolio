@@ -4,7 +4,7 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/customizations.css"  media="screen,projection"/>
   <!-- script stuff -->
@@ -20,84 +20,140 @@
 </head>
 
 
-<body>
-  <nav>
-    <div class="nav-wrapper indigo darken-4">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html">Home</a></li>
-    <li class="active"><a href="#">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-
+<body class = " deep-purple lighten-5">
   <div class = "container">
     <div class = "section"></div>
 
-    <h4>SugarTracker</h4>
-    <div class = "section"></div>
+    <h1>SugarTracker</h1>
+    <div class = "section">
 
-    <p>Category: Final Class Project</p>
+      <p>Category: Final Class Project</p>
 
-    <p>Tools: HTML/CSS, jQuery, PHP, AJAX, mySQL</p>
+      <p>Tools: HTML/CSS, jQuery, PHP, AJAX, mySQL</p>
 
-    <p>Team members: Team of 2</p>
-    <div class = "section"></div>
-    <p>
-      Sugartracker is a website based application, which stores a database of
-      sugar based drinks and exercises to burn the calories from the drinks off. This web application can
-      be accessed by both "visitors", who can browse information in the site, and "users", who can create an account to track their personal consumption.
-      The creation of this web application required front-end and back-end development and design.
-    </p>
-    <div class = "center-align">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Qql4NnaUr1s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <p>Demo video: created by me</p>
+      <p>Team members: Team of 2</p>
     </div>
 
-    <div class = "section"></div>
-    <h4>The Problem</h4>
-    <p>
-      Sugary drinks have been a major cause for diabetes and other disease.
-      They are cheap, easily available and a lot of sugar can be consumed in just a
-      few gulps. They have become more accesible than water itself in some areas, but there is
-      a lack of awareness of the quantity of sugar in these drinks, and a way to track personal consumption.
-    </p>
-    <h4>Concept</h4>
-    <p>Initial Considerations</p>
-    <p>To remedy this problem, we brainstormed a solution. We thought if people could be more aware of these problems through personal tracking,
-      awareness would increase, consumption would decrease, thus reducing potential health risks associated with sugar consumption.</p>
+    <div class = "section">
+      <p>
+        Sugartracker is a website based application, which stores a database of
+        sugar based drinks and exercises to burn the calories from the drinks off. This web application can
+        be accessed by both "visitors", who can browse information in the site, and "users", who can create an account to track their personal consumption.
+        The creation of this web application required front-end and back-end development and design.
+      </p>
+      <div class = "section"></div>
+      <div class = "center-align">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/Qql4NnaUr1s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p><em>Demo video created by me.</em><p>
+        </div>
+      </div>
+      <div class = "section">
+        <h3>The Problem</h3>
+        <p>
+          Sugary drinks have been a major cause for diabetes and other disease.
+          They are cheap, easily available and a lot of sugar can be consumed in just a
+          few gulps. They have become more accesible than water itself in some areas, but there is
+          a lack of awareness of the quantity of sugar in these drinks, and a way to track personal consumption.
+        </p>
+      </div>
 
-      INSERT SITE MAP
-      INSERT ER DIAGRAM
-      TALK ABOUT USER SCENARIOS, DATA, FEATURES, POSSIBLE DECISIONS,
+      <div class = "section">
+        <h3>Concept</h3>
+        <p>To remedy this problem, we brainstormed a solution. We thought if people could be more aware of these problems through personal tracking,
+          awareness would increase, consumption would decrease, thus reducing potential health risks associated with sugar consumption.</p>
+        <p>Additionally, we initially proposed to provide guidance for how they can solve their problem by prescribing specific exercises with specific times for people wanting to work off their sugar intake.</p>
+        <div class = "center-align">
+          <img class = "responsive-img" src = "assets/sugartracker/sitemapnew.png"/>
+          <p><em>A site diagram to plan user interaction with Sugartracker. Diagram made by me.</em></p>
+        </div>
+        <div class = "center-align">
+          <img class = "responsive-img" src = "assets/sugartracker/ERDiagram.png"/>
+          <p><em>The Entity-Relationship (ER) Diagram that we used to plan our database structure and primary keys. Diagram and database made by me and my project partner, Arth.</em></p>
+        </div>
+        </div>
 
-      <p>CHANGES (and why, before and after)</p>
-      <ul>
-        <li>see the equivalent measures of sugar that they consume (ex. in sugar
-          cubes, gummy bears, etc)</li>
-          <li>make their own custom drinks for adding to database</li>
-          <li>this list will clear in a week and give them a warning if they are close or
-            over their customized maximum sugar intake.</li>
+        <div class = "section">
+          <h3>Challenges and Revisions</h3>
+          <p>Firstly, we decided to replace the idea of prescribing exercises because it depended on too many user variables and even that would not provide an accurate result.
+          We would need to collect user information about their weight, height, BMI, types of exercises, and it was too much information for the scope of this month-long project.</p>
+          <p>Instead, we decided to give people a way to visualize how much sugar they consumed via sugary drinks. We felt this was more appropriate, since seeing
+          a volume in millilitres being represented by a count of familiar sweet objects communicated sugar quantity more clearly.</p>
+          <p>This third problem was with us even during our final presentation, but we decided there were too many volumes of drink containers to keep track of. One way to partially
+          fix this problem is to reduce the scope of our app to nation-wide (since, for example, McDonalds in America, Europe, and other parts of the world have different fountain drink sizes than the Canadian McDonalds).
+          </p>
+          <p>During the development process, it was difficult at first to separate our PHP, SQL, and AJAX code into files in a concise way. It was also difficult to, for example, find one line of an SQL query amidst a sea of PHP and HTML code,
+             and that made debugging a challenge.</p>
+
+             <div class = "center-align">
+               <img class = "responsive-img" src = "assets/sugartracker/wireframes.jpg"/>
+               <p><em>Wireframes that were used to plan the interface of our web application. Sketched by me.</em></p>
+             </div>
+
+        </div>
+        <div class = "section">
+          <h3>Features</h3>
+          <p>In this project, we define users as anyone who uses Sugartracker. Users who only view Sugartacker for the drinks list are called viewers, and users who register for an account and use the services available only after login are called members.</p>
+          <p>Members are able to do the following:</p>
+
+          <ul class = "browser-default">
+            <li>see the equivalent measures of sugar that they consume (ex. in sugar
+              cubes, gummy bears, etc)</li>
+            <li>make their own custom drinks for adding to database</li>
+            <li>this list will clear in a week.</li>
+            <li>receive a warning if they are close or
+                over their customized maximum sugar intake, and an even more cautious warning if they exceed.</li>
             <li>track the drinks they drink in a week</li>
             <li>See the equivalent measures of sugar content in any drinks in terms of other common sweets, such as gummy bears.</li>
           </ul>
 
-          <h4>
-            Future Considerations
-            "now I learned..." moment
-          </h4>
-          <p>If we had time to continue this project, we could add a feature to measure the other fats or unhealthy factors of each drink to give the user an idea of what they put in their bodies.</p>
-
+          <p>
+            While creating a persona for user scenarios was not in the scope of this project, a possible user scenario could look like this:
+          </p>
+          <p>"Carlos is a college student who can't pass up on a Tim Hortons iced cappuccino, but due to his family history of diabetic disease, he has decided to consume
+            sweet drinks in moderation, and he is looking for an easily accessible way to monitor his intake.
+            He finishes his Monday morning iced capp, and he opens Sugartracker on his laptop before beginning a study session.
+             He finds the size he drank, adds it to his weekly list, and sees his remaining sugar limit for the rest of the week. Carlos
+             realizes he needs to have only one iced capp a week if he wants to consume another sugary drink on Thursday."</p>
         </div>
 
+        <div class = "section">
+        <h3>
+          Future Considerations
+        </h3>
+        <p>If we had time to continue this project, we could add a feature to measure the other fats or unhealthy factors of each drink to give the
+          user an idea of what they put in their bodies. In terms of quantity, we could add more measures for the drinks and filter usable measures by the kind of drink (ex. Blenz drinks won't have
+          McDonald's large cup as a possible selection of drink volume. )</p>
+        <p>Through this project, I have learned how to navigate through code that has front-end HTML tags and back-end php that contains php language and SQL queries, and how to avoid mixing those up.
+          It has opened doors for me to continue building on my back-end web development knowledge.</p>
+        <p>Our preset weekly limit is 210 grams of sugar, based on the WHO guideline to consume maximum 30g of sugar per day.</p>
+        <p>Further improvements to the design and aesthetic of our web application would also be desirable.</p>
+          <p class = "center-align">
+            <a class="waves-effect waves-light btn-large deep-purple darken-3"
+            href = "assets/sugartracker/report.pdf" target="_blank">Read our full technical Report
+            <img src="assets/baseline-open_in_new-24px.svg" width="15px"></a>
+          </p>
+        </div>
+
+        <div class = "section">
+          <h3>
+            Credits
+          </h3>
+          <p>Teammate: Arth Bhattarai</p>
+        </div>
+
+
+      </div><!-- container -->
+
+
+
+  <div id = "homeicon">
+    <div class = "row right-align">
+      <div class = "col s12">
+        <a href = "/"><i class = "medium material-icons">home</i></a>
       </div>
     </div>
   </div>
-</body>
-</html>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="javascript" src="js/materialize.js"></script>
+  </body>
+  </html>

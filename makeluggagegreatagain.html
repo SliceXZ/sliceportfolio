@@ -4,7 +4,7 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/customizations.css"  media="screen,projection"/>
   <!-- script stuff -->
@@ -20,81 +20,98 @@
 </head>
 
 
-<body>
-  <nav>
-    <div class="nav-wrapper indigo darken-4">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html">Home</a></li>
-    <li class="active"><a href="#">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<body class = " deep-purple lighten-5">
 
 
-  <div class = "container">
+<div class = "container">
     <div class = "section"></div>
 
-
-  <h4>Make Luggage Great Again</h4>
+<div class = "section">
+  <h1>Make Luggage Great Again</h1>
   <div class = "section"></div>
   <p>Category: Final Class Project</p>
   <p>Tools: Android Studio IDE, Java</p>
   <p>Team members: Team of 3</p>
-  <div class = "section"></div>
-  <div class = "section center-align">
-    <img src = "https://alicezliceportfolio.files.wordpress.com/2018/01/first-screen.jpg" alt = "landing screen"/>
+
+  <div class = "center-align">
+    <img src = "assets/mlga/firstscreen.jpg" alt = "landing screen"/>
   </div>
-  <h5>Motivation</h5>
+</div>
+
+<div class = "section">
+  <h3>Motivation</h3>
   <p>
     We were to choose from two paths in the final project; create a technological solution to a challenge people face today, or create a new method of interaction in the domain human-computer interaction. We chose the first path. After brainstorming ideas on common problems, we all agreed
     that packing for a trip abroad and remembering allowed weights and luggage policies posed a hassle.
   </p>
-  <h5>Features</h5>
-
+</div>
+<div class = "section">
+  <h3>Features</h3>
   <p>
     Make Luggage Great Again is an application developed to remedy
     a problem faced today by travelers for business or leisure, solo or in a group. This travel weight tracker application aims to solve the overweight luggage issue by letting users measure luggage weight as they pack their bags without later realizing they are overweight and having to choose what to unpack.
   </p>
-  <div class = "section center-align">
-    <img src = "https://alicezliceportfolio.files.wordpress.com/2018/01/listscreen.jpg" alt = "list"/>
+  <div class = "center-align">
+    <img src = "assets/mlga/listscreen.jpg" alt = "list"/>
   </div>
   <p>
     Users can input items into Make Luggage Great Again so they know of the approximate current weight at any time. If they surpassed the maximum weight that their airline allows for check or cabin baggage, the application will notify them. They can then go straight back to their items list to choose what to remove instead of looking at a possibly tightly-packed bag and choosing.
   </p>
-  <div class = "section center-align">
-    <img src = "https://alicezliceportfolio.files.wordpress.com/2018/01/inputandexceedscreens.jpg?w=768&h=676" alt = "list"/>
+  <div class = "center-align">
+    <img class = "responsive-img" src = "assets/mlga/inputAndExceedScreens.jpg" alt = "list"/>
   </div>
   <p>Users can also to enter custom items and custom weights into the database if they are packing uncommon items such as instruments or sports gear.</p>
   <p>The application is developed in Android Studio using Java, and the databasing was handled by an external library,<a href="http://satyan.github.io/sugar/getting-started.html"> Sugar ORM</a>. I found Sugar’s methods and variable naming rules confusing at first, but it was significantly less complex compared to the MySQL approach.</p>
-  <h5>User Testing</h5>
-  <p>We gave 3 different users, all of whom are in different age groups and different experience levels with mobile applications, a series of tasks to perform with Make Luggage Great Again. The purpose was to analyze potential openings for human error and areas of improvement. Tasks assigned were:</p>
-  <ol>
-    <li>You are packing your luggage for an upcoming trip. You need to add a new bag
-      with the name ([Your Name]’s Carry On Bag) and set a weight limit of 22 units.</li>
+</div>
+
+  <div class = "section">
+  <h3>Challenges</h3>
+  <p>The first challenge I faced during development was how to structure the Java classes to be easily accessible and editable.
+  I did not have a convention or restriction on how many classes we needed, and the recommended structure was MVC (Model-View-Controller).
+  The next challenge was learning to work with the database library Sugar ORM, which had syntax much simpler than SQL for communicating with the database.
+  Remaining challenges were transitioning to a new laptop computer and having to reinstall Android studio and environment variables, but Gradle ran significantly faster.</p>
+  </div>
+
+
+  <div class = "section">
+    <h3>User Testing</h3>
+    <p>We gave 3 different users, all of whom are in different age groups and different experience levels with mobile applications, a series of tasks to perform with Make Luggage Great Again. The purpose was to analyze potential openings for human error and areas of improvement. Tasks assigned were:</p>
+    <ol>
+      <li>You are packing your luggage for an upcoming trip. You need to add a new bag
+        with the name ([Your Name]’s Carry On Bag) and set a weight limit of 22 units.</li>
       <li>Add 3 items (Laptop, empty water bottle, paper and pen) to your bag. Then,
-        make a custom item called “Desktop” with the weight of 3.5 units.</li>
-        <li>Since your luggage is overweight, you will need to remove an item from your
-          list so remove item (Desktop).</li>
-        </ol>
-        <p>
-          The participants’ times in seconds were recorded. A common problem identified was that there was no confirmation for adding or subtracting items from the packing list, which changed the overall weight. We believed that at least a toast message was necessary to communicate the successful insertion or removal of items.
-        </p>
+          make a custom item called “Desktop” with the weight of 3.5 units.</li>
+      <li>Since your luggage is overweight, you will need to remove an item from your
+            list so remove item (Desktop).</li>
+    </ol>
+    <p>
+      The participants’ times in seconds were recorded. A common problem identified was that there was no confirmation for adding or subtracting items from the packing list, which changed the overall weight. We believed that at least a toast message was necessary to communicate the successful insertion or removal of items.
+    </p>
 
-        <div class = "section center-align">
-          <img src = "https://alicezliceportfolio.files.wordpress.com/2018/01/screens.jpg" alt = "list"/>
+    <div class = "center-align">
+      <img class = "responsive-img" src = "assets/mlga/screens_new.jpg" alt = "list"/>
+    </div>
+  </div>
+
+  <div class="section">
+        <h3>Future Considerations</h3>
+        <p>Aside from user feedback, I believe it is worth it to include a screen with a general guideline on airlines and their policies on excess baggage, quantity of baggage, and forbidden items.
+          Most airlines have the same maximum weights and policies, and the main difference is whether or not is it a domestic, international, or inter-continental flights.
+          We could also consider the return flight and provide information on what users should be aware of on declaration forms.</p>
+        <p>This project increased my appreciation of Android developers, and I hope to do more Android development when I find an opportunity and resources.</p>
+  </div>
+
+</div>
+</div>
+
+      <div id = "homeicon">
+        <div class = "row right-align">
+          <div class = "col s12">
+            <a href = "/"><i class = "medium material-icons">home</i></a>
+          </div>
         </div>
-        <h5>Future Considerations</h5>
-        <p>Aside from user feedback, I believe it is worth it to include a screen with a general guideline on airlines and their policies on excess baggage, quantity of baggage, and forbidden items. Most airlines have the same maximum weights and policies, and the main difference is whether or not is it a domestic, international, or inter-continental flights. We could also consider the return flight and provide information on what users should be aware of on declaration forms.</p>
-
-
       </div>
-      </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="javascript" src="js/materialize.js"></script>
     </body>
     </html>

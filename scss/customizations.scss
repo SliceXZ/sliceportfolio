@@ -1,18 +1,18 @@
 @font-face { font-family: Whitney light;
-  src: url('./assets/fonts/WHITNLIG.otf') format("opentype");
+  src: url('assets/fonts/WHITNLIG.otf') format("opentype");
 }
 
-@font-face { font-family: Whitney light it;
-  src: url('./assets/fonts/WHITNLIT.otf') format("opentype");
+@font-face { font-family: Whitney lightIT;
+  src: url('assets/fonts/WHITNLIT.otf') format("opentype");
 }
 
 
 @font-face { font-family: Whitney med;
-  src: url('/assets/fonts/WhitneyHTF-Medium.otf') format("opentype");
+  src: url('assets/fonts/WhitneyHTF-Medium.otf') format("opentype");
 }
 
 @font-face { font-family: Raleway heavy;
-  src: url('/assets/fonts/Raleway-ExtraBold.ttf') format("opentype");
+  src: url('assets/fonts/Raleway-ExtraBold.ttf') format("opentype");
 }
 
 body{
@@ -43,13 +43,19 @@ h3{
 }
 
 p{
-  font-family: Whitney light;
+  font-family: Whitney light,sans-serif;
   font-size:1.15rem;
   color: #212121;
 }
 
-em{
-  font-family: Whitney light it;
+ol, ul{
+  font-family: Whitney light,sans-serif;
+  font-size:1.15rem;
+  color: #212121;
+  li{
+    font-family: inherit;
+    color: #212121;
+  }
 }
 
 .overlay {
@@ -113,6 +119,8 @@ em{
 }
 
 #homeicon{
+    padding-top: 1rem;
+    padding-bottom:1rem;
   i{
     padding-right:3rem;
     color: #ff1744;
