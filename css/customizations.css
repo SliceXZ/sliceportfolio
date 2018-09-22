@@ -1,42 +1,44 @@
 @font-face {
   font-family: Whitney light;
-  src: url("./assets/fonts/WHITNLIG.otf") format("opentype"); }
+  src: url("assets/fonts/WHITNLIG.otf") format("opentype"); }
 
 @font-face {
-  font-family: Whitney light it;
-  src: url("./assets/fonts/WHITNLIT.otf") format("opentype"); }
+  font-family: Whitney lightIT;
+  src: url("assets/fonts/WHITNLIT.otf") format("opentype"); }
 
 @font-face {
   font-family: Whitney med;
-  src: url("/assets/fonts/WhitneyHTF-Medium.otf") format("opentype"); }
+  src: url("assets/fonts/WhitneyHTF-Medium.otf") format("opentype"); }
 
 @font-face {
   font-family: Raleway heavy;
-  src: url("/assets/fonts/Raleway-ExtraBold.ttf") format("opentype"); }
+  src: url("assets/fonts/Raleway-ExtraBold.ttf") format("opentype"); }
 
 body {
   font-size: 100%; }
 
-h6 {
-  font-family: Whitney med;
-  font-size: 1.25rem; }
-
 h1, h2, h3, h4 {
   font-family: Raleway heavy; }
-
-h1 a {
-  color: white; }
-  h1 a:hover {
-    text-decoration: underline; }
 
 h3 {
   font-size: 2.25rem; }
 
+h5, h6 {
+  font-family: Whitney med;
+  font-size: 1.25rem; }
+
 p {
-  font-family: Whitney light;
+  font-family: Whitney light,sans-serif;
   font-size: 1.15rem;
   color: #212121; }
 
+ol, ul {
+  font-family: Whitney light,sans-serif;
+  font-size: 1.15rem;
+  color: #212121; }
+  ol li, ul li {
+    font-family: inherit;
+    color: #212121; }
 
 .overlay {
   position: absolute;
@@ -65,16 +67,26 @@ p {
     color: white; }
 
 .card-action:hover {
-  background-color: #bdbdbd;
+  background-color: #ffecb3;
   transition-property: background-color;
   transition-duration: 0.5s; }
 
 #landingImg {
   height: 50vh;
   overflow: hidden;
-  background-image: url("/assets/landing.jpg");
+  background-image: url("http://www.sfu.ca/~aza23/sliceportfolio/assets/landing.png");
   background-repeat: no-repeat;
   background-size: 100% auto; }
+
+#name {
+  color: white;
+  width: 100%;
+  bottom: 0;
+  text-align: center; }
+  #name a {
+    color: white; }
+    #name a:hover {
+      text-decoration: underline; }
 
 #darkArea {
   background-color: #221d23; }
@@ -89,6 +101,24 @@ p {
   margin-right: auto;
   border-radius: 50%; }
 
-#homeicon i {
-  padding-right: 3rem;
-  color: #ff1744; }
+#homeicon {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  #homeicon i {
+    padding-right: 3rem;
+    color: #ff1744; }
+
+#contactcard {
+  font-size: 1.5rem;
+  background-color: #b39ddb; }
+  #contactcard:hover {
+    background-color: #7c4dff;
+    transition-property: background-color;
+    transition-delay: 0.35s ease;
+    color: white; }
+  #contactcard a {
+    color: #311b92; }
+    #contactcard a:hover {
+      color: white;
+      transition-property: color;
+      transition-delay: 0.25s ease; }

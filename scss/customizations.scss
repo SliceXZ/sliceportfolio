@@ -19,27 +19,17 @@ body{
   font-size:100%;
 }
 
-h6{
-  font-family: Whitney med;
-  font-size:1.25rem;
-}
-
 h1, h2, h3, h4{
   font-family:Raleway heavy;
 }
 
-h1{
-  a{
-    color:white;
-    &:hover{
-      text-decoration:underline;
-    }
-  }
-
-}
-
 h3{
   font-size:2.25rem;
+}
+
+h5, h6{
+  font-family: Whitney med;
+  font-size:1.25rem;
 }
 
 p{
@@ -89,7 +79,7 @@ ol, ul{
 }
 
 .card-action:hover{
-  background-color:#bdbdbd;
+  background-color:#ffecb3;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -97,9 +87,22 @@ ol, ul{
 #landingImg{
   height:50vh;
   overflow: hidden;
-  background-image:url("/assets/landing.jpg");
+  background-image:url("http://www.sfu.ca/~aza23/sliceportfolio/assets/landing.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+#name{
+  color: white;
+  width:100%;
+  bottom:0;
+  text-align:center;
+  a{
+    color:white;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
 }
 
 #darkArea{
@@ -125,6 +128,27 @@ ol, ul{
     padding-right:3rem;
     color: #ff1744;
   }
+}
+
+#contactcard{
+  font-size:1.5rem;
+  background-color: #b39ddb;
+
+  &:hover{
+    background-color: #7c4dff;
+    transition-property: background-color;
+    transition-delay:0.35s ease;
+    color:white;
+  }
+
+    a{
+      color:#311b92;
+      &:hover{
+        color:white;
+        transition-property: color;
+        transition-delay:0.25s ease;
+      }
+    }
 }
 
 //https://coursetro.com/posts/code/88/Live-Reload-with-the-Gulp-Task-Runner-(with-Bootstrap,-Foundation,-etc)
