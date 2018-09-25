@@ -1,26 +1,29 @@
-@font-face { font-family: Whitney light;
-  src: url('assets/fonts/WHITNLIG.otf') format("opentype");
-}
+// @font-face { font-family: Whitney light;
+//   src: url('assets/fonts/WHITNLIG.otf') format("opentype");
+// }
+//
+// @font-face { font-family: Whitney lightIT;
+//   src: url('assets/fonts/WHITNLIT.otf') format("opentype");
+// }
+//
+//
+// @font-face { font-family: Whitney med;
+//   src: url('assets/fonts/WhitneyHTF-Medium.otf') format("opentype");
+// }
 
-@font-face { font-family: Whitney lightIT;
-  src: url('assets/fonts/WHITNLIT.otf') format("opentype");
-}
+// @font-face { font-family: Raleway heavy;
+//   src: url('assets/fonts/Raleway-ExtraBold.ttf') format("opentype");
+// }
 
-
-@font-face { font-family: Whitney med;
-  src: url('assets/fonts/WhitneyHTF-Medium.otf') format("opentype");
-}
-
-@font-face { font-family: Raleway heavy;
-  src: url('assets/fonts/Raleway-ExtraBold.ttf') format("opentype");
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,700,700i');
 
 body{
   font-size:100%;
 }
 
 h1, h2, h3, h4{
-  font-family:Raleway heavy;
+  font-family:'Raleway', sans-serif;
 }
 
 h3{
@@ -28,18 +31,21 @@ h3{
 }
 
 h5, h6{
-  font-family: Whitney med;
+  font-family: 'Lato', sans-serif;
+  font-weight:700;
   font-size:1.25rem;
 }
 
 p{
-  font-family: Whitney light,sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
   font-size:1.15rem;
   color: #212121;
 }
 
 ol, ul{
-  font-family: Whitney light,sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
   font-size:1.15rem;
   color: #212121;
   li{
@@ -68,6 +74,8 @@ ol, ul{
 .text {
   p{
     color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
   }
   opacity:1;
   font-size: 1.75rem;
